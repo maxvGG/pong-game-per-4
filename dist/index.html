@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <style type="text/css">
+        * {
+            margin: 0 auto;
+        }
+        
+        html,
+        body {
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        canvas {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            image-rendering: -moz-crisp-edges;
+            image-rendering: -webkit-crisp-edges;
+            image-rendering: pixelated;
+            image-rendering: crisp-edges;
+        }
+    </style>
+    <title>Pong ES6</title>
+</head>
+
+<body>
+    <div id="score">
+        <div id="score_player">
+
+        </div>
+        <div id="score_computer">
+
+        </div>
+    </div>
+    <audio src="snd/bounce.ogg"></audio>
+    <audio src="snd/lose.ogg"></audio>
+    <audio src="snd/out.ogg"></audio>
+    <audio src="snd/win.ogg"></audio>
+    <script src="main.bundle.js"></script> <br><br>
+
+    <!-- <button onclick="end_game()" id="end">Einde van het spel</button> -->
+
+    <form method="post" id="form" onsubmit="return save_score()" style="display: none;">
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name" required>
+        <br><br>
+        <input type="submit" name="continue" value="ga verder">
+    </form>
+
+    <div id="highscores" style="display: none;"></div> <br><br>
+
+</body>
+
+</html>

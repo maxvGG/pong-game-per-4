@@ -1,0 +1,25 @@
+{
+    "name": "pong",
+    "version": "1.0.0",
+    "description": "creating a pong game in es6",
+    "main": "index.js",
+    "scripts": {
+        "start": "nodemon --watch webpack.config.js --exec \"node_modules/.bin/webpack-dev-server --mode development\"",
+        "build": "webpack --mode production"
+    },
+    "author": "lukas stroomer",
+    "license": "ISC",
+    "dependencies": {
+        "save-dev": "0.0.1-security"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.10.2",
+        "@babel/preset-env": "^7.10.2",
+        "babel-loader": "^8.1.0",
+        "css-loader": "^3.5.3",
+        "nodemon": "^2.0.4",
+        "webpack": "^4.43.0",
+        "webpack-cli": "^3.3.11",
+        "webpack-dev-server": "^3.11.0"
+    }
+}

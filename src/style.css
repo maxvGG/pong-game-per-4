@@ -1,0 +1,19 @@
+form {
+    margin: 0 auto;
+    width: 250px;
+    margin-top: 15%;
+    border: 2px solid green;
+    padding: 50px;
+    text-align: center;
+    display: none;   
+}
+
+#highscores {
+    margin: 0 auto;
+    margin-top: 15%;
+    width: 250px;
+    border: 2px solid green;
+    padding: 50px;
+    text-align: center;
+    display: none; 
+}
